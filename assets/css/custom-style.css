@@ -1,0 +1,122 @@
+@media(min-width:993px) {
+  .navbar-nav li a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.page-content {
+  margin-top: 60px;
+  margin-bottom:20px;
+}
+
+.landing-screen {
+  background-color: lightgrey;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.landing-screen-content {
+  background-image: url(/assets/img/banner_about_company.jpg);
+  padding-left: 20%;
+  padding-top: 150px;
+  height: 500px;
+}
+
+.landing-screen-slogan {
+  color: white;
+  font-size: 40px;
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /*  height: 35px;*/
+  background-color: black;
+  /*  overflow-x:scroll;*/
+  /*  white-space: nowrap;*/
+}
+
+.sticky-footer-content {
+  text-align: center;
+  padding: 5px;
+}
+
+.sticky-footer-content > div,
+.sticky-footer-content > i {
+  display: inline-block;
+  color: white;
+/*    margin:5px;*/
+}
+
+@media(min-width:500px) {
+  .sticky-footer-separator {
+    margin-left: 40px;
+  }
+}
+
+.section-header {
+  margin-top:10px;
+  margin-bottom:20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+.section-header > .section-title {
+  font-size: 18px;
+  margin-bottom:10px;
+}
+
+.section-header > .section-description {
+  font-size:14px;
+  margin-top:10px;
+}
+
+.hr {
+  color: #cccccc;
+  height: 1px;
+  position: relative;
+  width: 20%;
+  text-align: center;
+  margin: auto;  /* center the block */
+  overflow: hidden;
+  max-width: 100%;
+  border-bottom: 1px solid !important;
+}
+
+footer {
+  margin-top:20px;
+  margin-bottom:40px;
+}
+
+
+.header-with-line {
+  position: relative;
+  text-align: center;
+  width:30%;
+  margin:auto;
+}
+
+.header-with-line > span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-with-line:before {
+  background: #ddd; 
+  /* ^ line color */
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+}
+
+.grid-vertical-gap {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

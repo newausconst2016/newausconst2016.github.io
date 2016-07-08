@@ -1,0 +1,43 @@
+---
+layout: main_layout
+title: About
+permdivnk: /about/
+group: navigation
+---
+<div class="section-header" style="padding-top:20px;">
+  <div class="section-title">Projects</div>
+  <div class="hr" style="width:30%"></div>
+  <div class="section-description">constructions involved</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+    {% assign project_pages = (site.pages | where: "group" , "projects") %}
+    {% assign sorted_pages = (project_pages | sort: "title") %}
+    {% for proj in sorted_pages %}
+      {% assign proj_img_path = ndivl %}
+
+      {% if proj.profile_image_filename != ndivl %}
+        {% assign proj_img_path = '/img/' | append: proj.profile_image_filename | prepend: proj.filename %}
+      {% else %}
+        {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}
+      {% endif %}
+
+      <div class="grid-vertical-gap col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-centered">
+        <a class="caption-style-3" href="{{ proj.filename }}">
+          <img src="{{ proj_img_path }}" alt="">
+          <div class="caption">
+            <div class="blur"></div>
+            <div class="caption-text">
+              <h1>{{ proj.title }}</h1>
+              <p>{{ proj.date_range }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+

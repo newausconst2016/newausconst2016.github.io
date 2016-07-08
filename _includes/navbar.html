@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">New Australia Construction</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+<!--
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+-->
+
+        {% if page.url == "/" %}
+          <li class="active"><a href="/" class="active">Home</a></li>
+        {% else %}
+          <li><a href="/">Home</a></li>
+        {% endif %}
+
+        {% if page.url == "/about.html" %}
+          <li class="active"><a href="/about">About</a></li>
+        {% else %}
+          <li><a href="/about">About</a></li>
+        {% endif %}
+
+        {% if page.url == "/projects/" %}
+          <li class="active"><a href="/projects">Projects</a></li>
+        {% else %}
+          <li><a href="/projects">Projects</a></li>
+        {% endif %}
+
+
+        {% if page.url == "/services.html" %}
+          <li class="active"><a href="/services">Services</a></li>
+        {% else %}
+          <li><a href="/services">Services</a></li>
+        {% endif %}
+
+        {% if page.url == "/contact.html" %}
+          <li class="active"><a href="/contact">Contact</a></li>
+        {% else %}
+          <li><a href="/contact">Contact</a></li>
+        {% endif %}
+
+        {% if page.url == "/projects.html" %}
+          <li class="active"><a href="/opportunity">Opportunity</a></li>
+        {% else %}
+          <li><a href="/opportunity">Opportunity</a></li>
+        {% endif %}
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+
+

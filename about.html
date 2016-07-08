@@ -1,0 +1,68 @@
+---
+layout: main_layout
+title: About
+permlink: /about/
+group: navigation
+---
+
+  
+  <div class="header-with-line"><span>est 2007</span></div>
+  <div class="section-header">
+    <p>Commercial & professional builders with 20 years of experience</p>
+    <div class="hr" style="width:30%"></div>
+  </div>
+  
+  <section style="background-color:lightgrey; width:100%">
+    <div class="container">
+      <div class="section-header">
+        <p>Company Overview</p>
+        <div class="hr" width="30%"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          {{ site.data.about.overview | markdownify }}
+        </div>
+        <div class="col-sm-4">
+          <img src="/assets/img/everycowboy_dribbbleready_shot.jpg" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section style="background-color:white; width:100%">
+    <div class="container">
+      <div class="section-header">
+        <p>Our director</p>
+        <div class="hr" width="30%"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="/assets/img/everycowboy_dribbbleready_shot.jpg" width="100%">
+        </div>
+        <div class="col-sm-8">
+          {{ site.data.about.overview | markdownify }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section style="background-color:lightgrey; width:100%">
+    <div class="container">
+      <div class="section-header">
+        <p>Some of our clients</p>
+        <div class="hr" width="30%"></div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </section>
+
+
+
+<!--
+  {{ site.data.about.desc }}
+  {{ include.param }}
+  
+  {{ page.url }}
+  
+-->
