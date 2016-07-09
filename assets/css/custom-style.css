@@ -65,12 +65,12 @@
 }
 
 .section-header > .section-title {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 .section-header > .section-description {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 10px;
 }
 
@@ -90,6 +90,8 @@
 footer {
   margin-top: 20px;
   margin-bottom: 40px;
+  bottom: 0;
+  padding: 15px;
 }
 
 .header-with-line {
@@ -141,4 +143,82 @@ footer {
 .slick-dots {
   overflow: scroll;
   white-space: nowrap;
+}
+
+.project-header-title {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.project-description h4 {
+  font-size: 17px;
+}
+
+.project-description p {
+  font-size: 14px;
+  color: #555555;
+}
+
+.project-period h4 {
+  font-size: 17px;
+}
+
+.project-period p {
+  font-size: 14px;
+  color: #555555;
+}
+
+.project-location h4 {
+  font-size: 17px;
+}
+
+.project-location p {
+  font-size: 14px;
+  color: #555555;
+}
+
+.service-item {
+  padding: 10px;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-description p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200px;
+}
+
+.topic-image {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.topic-image > img {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .topic-image {
+    height: 200px;
+  }
+}
+
+@media (min-width: 993px) {
+  .project-thumbnail-cell {
+    height:250px;
+    overflow: hidden;
+  }
 }

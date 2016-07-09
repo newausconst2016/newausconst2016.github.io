@@ -5,41 +5,62 @@
 <body>
   {% include navbar.html %}
   <div class="page-content">
-
-    <div class="slides">
-      {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "title") %} {% for proj in project_pages %}
-
-      <!--      {% assign proj_img_path = null %}-->
-
-      <!--
-      {% if proj.profile_image_filename != null %}
-        {% assign proj_img_path = '/img/' | append: proj.profile_image_filename | prepend: proj.filename %}
-      {% else %}
+    
+<!--
+    <div class="container">
+      <div class="project-header-title">{{ page.title }}</div>
+    </div>
 -->
-      <!--        {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}-->
-      <!--      {% endif %}-->
-
-
-      <div><img class="img-responsive" src="images/kitchen_adventurer_cheesecake_brownie.jpg" /></div>
-
-
-
-
-
-
-
+    
+<div class="section-header" style="padding-top:20px;">
+  <div class="section-title">{{ page.title }}</div>
+  <div class="hr" style="width:70%"></div>
+  <div class="section-description">{{ page.date_range }}</div>
+</div>
+    
+    
+    <!--  Image Slider  -->
+    {% assign img_dir = page.url | append: "img/" %}
+    <div class="slides">
+      {% for file in site.static_files %}
+        {% if file.path contains img_dir %}
+          <div><img class="img-responsive" src="{{ file.path }}" /></div>
+        {% endif %}
       {% endfor %}
     </div>
+  <!-- /Image Slider -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="project-description">
+          <h4>Overview</h4>
+          <p>{{ page.description }}</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="project-period">
+          <h4>Period</h4>
+          <p>{{ page.date | date: "%B %Y" }}</p>
+        </div>
+        <div class="project-location">
+          <h4>Location</h4>
+          <p>{{ page.location }}</p>
+        </div>
+      </div>
+    </div>
+  
+    
+    
   </div>
-
-
-
-
-
-
-
-
-  {% include footer.html %} {% include javascript.html %}
+  
+  
+  
+  
+  </div>
+  
+  {% include footer.html %}
+  {% include javascript.html %}
 </body>
 
 </html>
