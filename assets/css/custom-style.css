@@ -7,7 +7,7 @@
 
 .page-content {
   margin-top: 60px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .landing-screen {
@@ -48,7 +48,7 @@
 .sticky-footer-content > i {
   display: inline-block;
   color: white;
-/*    margin:5px;*/
+  /*    margin:5px;*/
 }
 
 @media(min-width:500px) {
@@ -58,19 +58,20 @@
 }
 
 .section-header {
-  margin-top:10px;
-  margin-bottom:20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
+
 .section-header > .section-title {
   font-size: 18px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .section-header > .section-description {
-  font-size:14px;
-  margin-top:10px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .hr {
@@ -79,23 +80,23 @@
   position: relative;
   width: 20%;
   text-align: center;
-  margin: auto;  /* center the block */
+  margin: auto;
+  /* center the block */
   overflow: hidden;
   max-width: 100%;
   border-bottom: 1px solid !important;
 }
 
 footer {
-  margin-top:20px;
-  margin-bottom:40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-
 
 .header-with-line {
   position: relative;
   text-align: center;
-  width:30%;
-  margin:auto;
+  width: 30%;
+  margin: auto;
 }
 
 .header-with-line > span {
@@ -106,17 +107,38 @@ footer {
 }
 
 .header-with-line:before {
-  background: #ddd; 
+  background: #ddd;
   /* ^ line color */
   content: "";
   display: block;
   height: 1px;
   position: absolute;
-    top: 50%;
+  top: 50%;
   width: 100%;
 }
 
 .grid-vertical-gap {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.slick-next,
+.slick-prev {
+  /*  color:black;*/
+  background-color: black;
+  z-index: 9999;
+}
+
+.slick-slide > * {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slick-slide {
+  height: 50vh;
+}
+
+.slick-dots {
+  overflow: scroll;
+  white-space: nowrap;
 }

@@ -1,13 +1,23 @@
- <script src="{{ "/assets/js/jquery-2.2.0.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/jquery-2.2.0.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 <!--  <script src="{{ "/assets/js/semantic.min.js" | prepend: site.baseurl }}"></script>-->
-  <script src="{{ "/assets/js/jasny-bootstrap.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/slick.min.js" | prepend: site.baseurl }}"></script>
-  <!-- Menu Toggle Script -->
-  
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
+<script src="{{ " /assets/js/jasny-bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/plugin/slick/slick.min.js " | prepend: site.baseurl }}"></script>
+<!-- Menu Toggle Script -->
+
+<script>
+  $(document).ready(function () {
+    $('.slides').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      slidesToShow: 1,
+      centerMode: true,
+      adaptiveHeight: true,
+      variableWidth: true,
+      arrows: false,
     });
-  </script>
+  });
+</script>

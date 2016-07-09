@@ -14,12 +14,11 @@ group: navigation
 <div class="container">
   <div class="row">
 
-    {% assign project_pages = (site.pages | where: "group" , "projects") %}
-    {% assign sorted_pages = (project_pages | sort: "title") %}
-    {% for proj in sorted_pages %}
-      {% assign proj_img_path = ndivl %}
+    {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "title") %}
+    {% for proj in project_pages %}
+      {% assign proj_img_path = null %}
 
-      {% if proj.profile_image_filename != ndivl %}
+      {% if proj.profile_image_filename != null %}
         {% assign proj_img_path = '/img/' | append: proj.profile_image_filename | prepend: proj.filename %}
       {% else %}
         {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}

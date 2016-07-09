@@ -4,62 +4,42 @@
 
 <body>
   {% include navbar.html %}
-
-
   <div class="page-content">
 
+    <div class="slides">
+      {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "title") %} {% for proj in project_pages %}
+
+      <!--      {% assign proj_img_path = null %}-->
+
+      <!--
+      {% if proj.profile_image_filename != null %}
+        {% assign proj_img_path = '/img/' | append: proj.profile_image_filename | prepend: proj.filename %}
+      {% else %}
+-->
+      <!--        {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}-->
+      <!--      {% endif %}-->
 
 
-        <div class="slides">
-          <li>
-            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_lemon.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_donut.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_caramel.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_lemon.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_donut.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_caramel.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_lemon.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_donut.jpg" />
-          </li>
-          <li>
-            <img src="images/kitchen_adventurer_caramel.jpg" />
-          </li>
-        </div>
+      <div><img class="img-responsive" src="images/kitchen_adventurer_cheesecake_brownie.jpg" /></div>
 
 
 
+
+
+
+
+      {% endfor %}
     </div>
+  </div>
 
 
 
 
 
 
-  {% include footer.html %}
-  {% include javascript.html %}
+
+
+  {% include footer.html %} {% include javascript.html %}
 </body>
 
 </html>
