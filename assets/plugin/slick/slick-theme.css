@@ -165,16 +165,15 @@
     outline: none;
     background: transparent;
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus
+.slick-dots li button:hover
 {
     outline: none;
 }
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before
+.slick-dots li button:hover:before
 {
     opacity: 1;
 }
+
 .slick-dots li button:before
 {
     font-family: 'slick';

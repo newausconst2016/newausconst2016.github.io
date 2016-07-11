@@ -1,0 +1,155 @@
+---
+layout: main_layout
+title: Contact
+permlink: /contact/
+group: navigation
+---
+
+<div class="page-heading" style="padding-top:20px;">
+  <div class="page-title">Contact</div>
+  <div class="hr"></div>
+  <div class="page-description">feel free to talk to us</div>
+</div>
+
+<!--<div class="contact-topic-img-wrapper" style="background-image: url('/assets/img/Contact-us1.jpg');"></div>-->
+
+{% include google-map.html %}
+
+
+<div id="message-sent-alert" class="alert alert-dismissible alert-success fade in sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>Thanks for your message. We will contact you as soon as possible.</p>
+</div>
+
+<div id="message-sending-alert" class="alert alert-dismissible alert-warning sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>Sending your message.</p>
+</div>
+
+{% assign c = site.data.contact %}
+<div class="contact-page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="contact-form-heading">
+          <div class="section-heading" style="padding-top:20px;">
+            <p>Contact us directly</p>
+            <div class="hr"></div>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="contact-details-item">
+            <div class="row">
+              <div class="col-xs-1 col-sm-offset-2">
+                <div style="text-align:center;">
+                  <i class="fa fa-phone" aria-hidden="true" style="padding-left:7px;"></i>
+                </div>
+              </div>
+              <div class="col-xs-7">
+                <a class="contact-details-content" href="tel:{{ c.mobile }}">{{ c.mobile }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-details-item">
+            <div class="row">
+              <div class="col-xs-1 col-sm-offset-2">
+                <div style="text-align:center;">
+                  <i class="fa fa-phone-square" aria-hidden="true" style="padding-left: 7px;"></i>
+                </div>
+              </div>
+              <div class="col-xs-7">
+                <a class="contact-details-content" href="tel:{{ c.tel }}">{{ c.tel }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-details-item">
+            <div class="row">
+              <div class="col-xs-1 col-sm-offset-2">
+                <div style="text-align:center;">
+                  <i class="fa fa-fax" aria-hidden="true" style="padding-left:5px;"></i>
+                </div>
+              </div>
+              <div class="col-xs-7">
+                <a class="contact-details-content" href="tel:{{ c.fax }}">{{ c.fax }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-details-item">
+            <div class="row">
+              <div class="col-xs-1 col-sm-offset-2">
+                <i class="fa fa-envelope-o" aria-hidden="true" style="padding-left:5px;"></i>
+
+              </div>
+              <div class="col-xs-7">
+                <a class="contact-details-content" href="mailto:{{ c.email }}">{{ c.email }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-details-item">
+            <div class="row">
+              <div class="col-xs-1 col-sm-offset-2">
+                <i class="fa fa-map-marker" aria-hidden="true" style="padding-left:8px;"></i>
+              </div>
+              <div class="col-xs-7">
+                <a class="contact-details-content" href="https://goo.gl/maps/v4exuApFbmq" target="_blank">{{ c.address }}
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  contact form  -->
+      <div class="col-sm-6">
+        <div class="contact-form-heading">
+          <div class="section-heading" style="padding-top:20px;">
+            <p>Get in touch with us</p>
+            <div class="hr"></div>
+          </div>
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-1">
+          <form id='contact-form' class="form-horizontal" action="https://formspree.io/{{ site.data.contact.email }}" method="POST">
+            <fieldset>
+              <div class="form-group">
+                <!--            <label for="inputEmail" class="col-lg-2 control-label">Email</label>-->
+                <div class="">
+                  <input type="text" class="form-control" name="Name" placeholder="Your name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="">
+                  <input type="text" class="form-control" name="Email" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="">
+                  <input type="text" class="form-control" name="Phone" placeholder="Phone number">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="">
+                  <textarea class="form-control" rows="4" name="Message" placeholder="Leave us a message here" style="resize: vertical;"></textarea>
+                  <!--              <span class="help-block">We will contact you as soon as possible</span>-->
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="pull-right">
+                  <button type="reset" class="btn btn-warning btn-sm">Cancel</button>
+                  <button type="submit" class="btn btn-success btn-sm" style="margin-left:10px; padding-left:15px; padding-right:15px;">Send</button>
+                </div>
+              </div>
+            </fieldset>
+
+          </form>
+        </div>
+      </div>
+      <!--  / contact form  -->
+
+    </div>
+
+  </div>
+</div>

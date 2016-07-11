@@ -3,6 +3,8 @@
 <!--  <script src="{{ "/assets/js/semantic.min.js" | prepend: site.baseurl }}"></script>-->
 <script src="{{ " /assets/js/jasny-bootstrap.min.js " | prepend: site.baseurl }}"></script>
 <script src="{{ " /assets/plugin/slick/slick.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/jquery.form.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/pace.min.js " | prepend: site.baseurl }}"></script>
 <!-- Menu Toggle Script -->
 
 <script>
@@ -18,11 +20,52 @@ $(document).ready(function () {
     adaptiveHeight: true,
     variableWidth: true,
     arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: true,
   });
 
     
   // for service page
 //  $(".service-item:odd .service-title").css("text-align","right");
+
+  var msg_sent_alert = $('#message-sent-alert');
+  var msg_sending_alert = $('#message-sending-alert');
+  msg_sent_alert.hide();
+  msg_sending_alert.hide();
+  msg_sent_alert.removeClass('sr-only');
+  msg_sending_alert.removeClass('sr-only');
+  var $contactForm = $('#contact-form');
+    $contactForm.submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: '//formspree.io/kelvin@kelvinli.me',
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+              msg_sent_alert.hide();
+              msg_sending_alert.slideDown("400");
+            },
+            success: function(data) {
+              msg_sending_alert.hide();
+              msg_sent_alert.slideDown("400");
+            },
+            error: function(err) {
+//                $contactForm.find('.alert--loading').hide();
+//                $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+            }
+        });
+    });
+
+  
+    // auto scroll to bottom of page
+//    setTimeout(printSomething, 1000);
+//    function printSomething(){
+//        $('html, body').animate({
+//          scrollTop: document.body.scrollHeight
+//        }, 1500);
+//    }
 
 });
 </script>

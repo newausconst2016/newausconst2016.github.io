@@ -1,0 +1,39 @@
+---
+layout: main_layout
+title: Opportunities
+group: navigation
+---
+
+<div class="page-heading" style="padding-top:20px;">
+  <div class="page-title">Opportunities</div>
+  <div class="hr"></div>
+  <div class="page-description">working at NAC</div>
+</div>
+
+<div class="opportunity-topic-img-wrapper" style="background-image: url('/assets/img/aboutus-banner3.jpg'); "></div>
+
+{% if (site.data.opportunity | size) == 0 %}
+
+{% endif %}
+
+<div class="container job-list">
+  {% for job in site.data.opportunity %}
+    <div class="job-item">
+      <p class="job-title">{{ job.title }}</p>
+      <div class="row">
+        <div class="col-sm-3">
+          <h4 class="info-topic">Salary</h4>
+          <p class="info-content">{{ job.salary }}</p>
+          <h4 class="info-topic">Type</h4>
+          <p class="info-content">{{ job.job-type }}</p>
+          <h4  class="info-topic">Location</h4>
+          <p class="info-content">{{ job.location }}</p>
+        </div>
+        <div class="col-sm-9">
+          <div class="job-description">{{ job.description }}</div>
+        </div>
+      </div>
+    </div>
+  <hr>
+  {% endfor %}
+</div>

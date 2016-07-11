@@ -6,25 +6,38 @@ group: navigation
 
 
 <section class="landing-screen">
-  <div class="landing-screen-content container">
-    <p class="landing-screen-slogan">Building a better Australia</p>
-    <a class="btn btn-primary btn-lg" href="/about/">Learn more</a>
+  <div class="landing-screen-content">
+        <div class="landing-screen-slogan">
+          <p>Building a better Australia</p>
+<!--          <p>More about us&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>-->
+<!--</p>-->
+          <a class="btn btn-sm btn-danger" href="/about/">More about us&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+<!--    <a class="btn btn-primary btn-lg" href="/about/">Learn more</a>-->
   </div>
 </section>
 
 
 <section>
   <div class="container">
-    <div class="section-header">
+    <div class="section-heading">
       <p>Recent projects</p>
       <div class="hr"></div>
     </div>
     <div class="row row-horizon custom_scrollbar">
-      {% for proj_hash in site.data.projects %}
-        {% assign proj = proj_hash[1] %}
-        <div class="col-md-4" style="margin-bottom:10px;">
+      {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "date") %}
+      {% for proj in project_pages limit:8 %}
+        {% assign proj_img_path = null %}
+
+        {% if proj.profile_image_filename != null %}
+          {% assign proj_img_path = '/img/' | append: proj.profile_image_filename | prepend: proj.filename | prepend: "/projects/" %}
+        {% else %}
+          {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}
+        {% endif %}
+      
+        <div class="col-md-4 project-thumbnail-cell">
           <div class="caption-style-3">
-            <img src="assets/img/everycowboy_dribbbleready_shot.jpg" alt="" style="max-width:100%; max-height:100%">
+            <img src="{{ proj_img_path }}" alt="" style="max-width:100%; max-height:100%">
             <div class="caption">
               <div class="blur"></div>
               <div class="caption-text" style="top:0px;">
@@ -33,7 +46,15 @@ group: navigation
               </div>
             </div>
           </div>
-      </div>
+        </div>
+    {% endfor %}
+      
+      
+      
+      
+      {% for proj_hash in site.data.projects %}
+        {% assign proj = proj_hash[1] %}
+        
       {% endfor %}
 
 </section>

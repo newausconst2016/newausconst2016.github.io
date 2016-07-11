@@ -5,10 +5,10 @@ permlink: /services/
 group: navigation
 ---
 
-<div class="section-header" style="padding-top:20px;">
-  <div class="section-title">Services</div>
-  <div class="hr" style="width:70%"></div>
-  <div class="section-description">what we provide</div>
+<div class="page-heading" style="padding-top:20px;">
+  <div class="page-title">Services</div>
+  <div class="hr"></div>
+  <div class="page-description">what we offer</div>
 </div>
 
 <div class="topic-image">
@@ -17,29 +17,15 @@ group: navigation
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 service-item">
-      <div class="service-title">Feasibility Anslysis</div>
-      <div class="service-description">
-        <p>We have created a cost database from up-to-date and relevant data, so we can give you accurate project budgets and feasibility studies. This allows us to give you a detailed, reliable forecast of construction costs for any sized project, from design to build.</p>
+    {% for s in site.data.services %}
+       <div class="col-sm-6 service-item">
+         <div class="section-heading" >
+           <p>{{ s.title }}</p>
+           <div class="hr"></div>
+         </div>
+<!--        <div class="service-title">{{ s.title }}</div>-->
+        <div class="service-description">{{ s.description }}</div>
       </div>
-    </div>
-    <div class="col-sm-6 service-item">
-      <div class="service-title">Feasibility Anslysis</div>
-      <div class="service-description">
-        <p>We have created a cost database from up-to-date and relevant data, so we can give you accurate project budgets and feasibility studies. This allows us to give you a detailed, reliable forecast of construction costs for any sized project, from design to build.</p>
-      </div>
-    </div>
-    <div class="col-sm-6 service-item">
-      <div class="service-title">Feasibility Anslysis</div>
-      <div class="service-description">
-        <p>We have created a cost database from up-to-date and relevant data, so we can give you accurate project budgets and feasibility studies. This allows us to give you a detailed, reliable forecast of construction costs for any sized project, from design to build.</p>
-      </div>
-    </div>
-    <div class="col-sm-6 service-item">
-      <div class="service-title">Feasibility Anslysis</div>
-      <div class="service-description">
-        <p>We have created a cost database from up-to-date and relevant data, so we can give you accurate project budgets and feasibility studies. This allows us to give you a detailed, reliable forecast of construction costs for any sized project, from design to build.</p>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>

@@ -4,51 +4,64 @@ title: About
 permlink: /about/
 group: navigation
 ---
-
-  
-  <div class="header-with-line"><span>est 2007</span></div>
-  <div class="section-header">
-    <p>Commercial & professional builders with 20 years of experience</p>
-    <div class="hr" style="width:30%"></div>
+<div class="page-heading" style="padding-top:20px;">
+  <div class="page-title">About us</div>
+  <div class="hr"></div>
+  <div class="page-description">
+    <p>Commercial & professional builders with 10 years of experience</p>
   </div>
-  
-  <section style="background-color:lightgrey; width:100%">
-    <div class="container">
-      <div class="section-header">
-        <p>Company Overview</p>
-        <div class="hr" width="30%"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8">
-          {{ site.data.about.overview | markdownify }}
-        </div>
-        <div class="col-sm-4">
-          <img src="/assets/img/everycowboy_dribbbleready_shot.jpg" width="100%">
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
 
- <section style="background-color:white; width:100%">
-    <div class="container">
-      <div class="section-header">
-        <p>Our director</p>
-        <div class="hr" width="30%"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="/assets/img/everycowboy_dribbbleready_shot.jpg" width="100%">
-        </div>
-        <div class="col-sm-8">
+<div class="topic-image" >
+  <img src="/assets/img/pexels-photo-25954.jpg" style="bottom:-8%;">
+</div>
+
+<section style="width:100%">
+  <div class="container">
+    <div class="section-heading">
+      <p>Company Overview</p>
+      <div class="hr" width="30%"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-1">
+        <div class="about-page-text">
           {{ site.data.about.overview | markdownify }}
         </div>
       </div>
+      <div class="col-sm-4">
+        <img src="/assets/img/commercial-construction.jpg" width="100%">
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
- <section style="background-color:lightgrey; width:100%">
+<section style="width:100%; margin-top:10px;">
+  <div class="container">
+    <div class="section-heading">
+      <p>Message from our director</p>
+      <div class="hr" width="30%"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-4 col-sm-offset-1">
+        <div class="about-page-text">
+          {{ site.data.about.about_general_manager | markdownify }}
+        </div>
+        <div class="director-title">
+          <h4>{{ site.data.about.general_manager_name }}</h4>
+          <p>General Manager of {{ site.data.contact.short_company_name }}</p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-pull-6">
+        <img src="{{ site.data.about.director_profile_picture_link }}" width="100%">
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+
+ <section style=" width:100%">
     <div class="container">
-      <div class="section-header">
+      <div class="section-heading">
         <p>Some of our clients</p>
         <div class="hr" width="30%"></div>
       </div>
@@ -57,12 +70,4 @@ group: navigation
     </div>
   </section>
 
-
-
-<!--
-  {{ site.data.about.desc }}
-  {{ include.param }}
-  
-  {{ page.url }}
-  
 -->

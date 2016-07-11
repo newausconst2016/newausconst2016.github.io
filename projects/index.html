@@ -1,20 +1,19 @@
 ---
 layout: main_layout
-title: About
-permdivnk: /about/
+title: Projects
 group: navigation
 ---
-<div class="section-header" style="padding-top:20px;">
-  <div class="section-title">Projects</div>
-  <div class="hr" style="width:70%"></div>
-  <div class="section-description">constructions involved</div>
+<div class="page-heading" style="padding-top:20px;">
+  <div class="page-title">Projects</div>
+  <div class="hr"></div>
+  <div class="page-description">constructions involved</div>
 </div>
 
 
 <div class="container">
   <div class="row">
 
-    {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "title") %}
+    {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "date") %}
     {% for proj in project_pages %}
       {% assign proj_img_path = null %}
 
