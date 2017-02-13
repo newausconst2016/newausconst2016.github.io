@@ -13,7 +13,7 @@ group: navigation
 <div class="container">
   <div class="row">
 
-    {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "date") %}
+    {% assign project_pages = (site.pages | where: "group" , "projects" | sort: 'date') %}
     {% for proj in project_pages %}
       {% assign proj_img_path = null %}
 

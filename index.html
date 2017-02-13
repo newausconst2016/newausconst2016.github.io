@@ -4,7 +4,6 @@ title: Home
 group: navigation
 ---
 
-
 <section class="landing-screen">
   <div class="landing-screen-content">
         <div class="landing-screen-slogan">
@@ -17,7 +16,6 @@ group: navigation
   </div>
 </section>
 
-
 <section>
   <div class="container">
     <div class="section-heading">
@@ -25,7 +23,7 @@ group: navigation
       <div class="hr"></div>
     </div>
     <div class="row row-horizon custom_scrollbar">
-      {% assign project_pages = (site.pages | where: "group" , "projects" | sort: "date") %}
+      {% assign project_pages = (site.pages | where: "group", "projects" | sort: "date") %}
       {% for proj in project_pages limit:8 %}
         {% assign proj_img_path = null %}
 
@@ -47,14 +45,16 @@ group: navigation
             </div>
           </div>
         </div>
-    {% endfor %}
-      
-      
-      
-      
+      {% endfor %}
+        
+        
+        
+        
       {% for proj_hash in site.data.projects %}
         {% assign proj = proj_hash[1] %}
         
       {% endfor %}
+    </div>
+  </div>
 
 </section>
