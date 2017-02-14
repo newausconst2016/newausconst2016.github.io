@@ -1,6 +1,6 @@
 ---
 title: Meriton apartments ACI Moorepark
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting February 2000
 description: Supply and install plasterboard for the new apartments
 group: projects

@@ -1,6 +1,6 @@
 ---
 title: Walton construction Cess nock Care centre
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting February 2009
 description: worth about 150K of gyprocking
 group: projects

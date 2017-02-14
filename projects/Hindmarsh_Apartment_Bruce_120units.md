@@ -1,6 +1,6 @@
 ---
 title: Hindmarsh Apartment Bruce 120units
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: January 2009 – January 2010
 description: supply and install all the plasterboard ceilings and partition walls
   for the whole building.

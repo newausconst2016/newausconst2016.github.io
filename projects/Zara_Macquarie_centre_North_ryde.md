@@ -1,6 +1,6 @@
 ---
 title: Zara Macquarie centre North ryde
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: July 2015 – December 2015
 description: Great honour to complete Zara project at Macquarie centre with all wall
   and ceiling plasterboard works and all fittings and designed boxs for aircondition

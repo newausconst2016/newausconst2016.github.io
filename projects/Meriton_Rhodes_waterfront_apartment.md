@@ -1,6 +1,6 @@
 ---
 title: Meriton Rhodes waterfront apartment
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting April 2004
 description: New residential units
 group: projects

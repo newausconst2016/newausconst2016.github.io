@@ -1,6 +1,6 @@
 ---
 title: Regement Development Legal Aid sydney office
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting February 2012
 description: Australia Federal Police building at Central, Property maintenance and
   renovating all Legal Aid office through out the building( total 10 Levels of offices)

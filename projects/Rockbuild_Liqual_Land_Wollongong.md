@@ -1,6 +1,6 @@
 ---
 title: Rockbuild Liqual Land Wollongong
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting January 2013
 description: 'Supply and repair all awnings. '
 group: projects

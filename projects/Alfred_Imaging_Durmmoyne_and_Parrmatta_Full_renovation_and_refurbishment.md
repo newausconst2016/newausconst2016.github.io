@@ -1,6 +1,6 @@
 ---
 title: Alfred Imaging Durmmoyne and Parrmatta Full renovation and refurbishment
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting January 2013
 description: Worth about $120k of upgrade
 group: projects

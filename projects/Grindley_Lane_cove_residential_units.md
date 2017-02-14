@@ -1,6 +1,6 @@
 ---
 title: Grindley Lane cove residential units
-date: '2013-11-28 13:00:00'
+date: '2013-11-28 00:00:00'
 date_range: Starting February 2008
 description: Supply and install all external CFC compressed fired cement system.
 group: projects
