@@ -12,9 +12,12 @@ group: navigation
 
 <div class="opportunity-topic-img-wrapper" style="background-image: url('/assets/img/aboutus-banner3.jpg'); "></div>
 
-{% if (site.data.opportunity | size) == 0 %}
+{% unless site.data.opportunity %}
+<div class="empty-sign">
+  Sorry, no position available at the moment.
+</div>
+{% endunless %}
 
-{% endif %}
 
 <div class="container job-list">
   {% for job in site.data.opportunity %}
@@ -36,4 +39,5 @@ group: navigation
     </div>
   <hr>
   {% endfor %}
+
 </div>
