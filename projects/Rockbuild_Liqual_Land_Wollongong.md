@@ -1,5 +1,6 @@
 ---
-date: 2013-11-29 00:00:00 +1100
+title: Rockbuild Liqual Land Wollongong
+date: '2013-11-28 13:00:00'
 date_range: Starting January 2013
 description: 'Supply and repair all awnings. '
 group: projects
@@ -18,5 +19,4 @@ image_files:
 - projects/images/architecture-blue-building-business-41170.jpeg
 layout: project_layout
 location: sydney
-title: Rockbuild Liqual Land Wollongong
 ---

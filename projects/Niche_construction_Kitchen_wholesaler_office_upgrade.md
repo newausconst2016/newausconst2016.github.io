@@ -1,5 +1,6 @@
 ---
-date: 2013-11-29 00:00:00 +1100
+title: Niche construction Kitchen wholesaler office upgrade
+date: '2013-11-28 13:00:00'
 date_range: Starting February 2012
 description: complete upgraded the office with new platerboard, aluminum partitions,
   glass, skirting, painting, tiling
@@ -19,5 +20,4 @@ image_files:
 - projects/images/architecture-blue-building-business-41170.jpeg
 layout: project_layout
 location: sydney
-title: Niche construction Kitchen wholesaler office upgrade
 ---

@@ -1,5 +1,6 @@
 ---
-date: 2013-11-29 00:00:00 +1100
+title: Meriton Rhodes waterfront apartment
+date: '2013-11-28 13:00:00'
 date_range: Starting April 2004
 description: New residential units
 group: projects
@@ -18,5 +19,4 @@ image_files:
 - projects/images/pexels-photo-27406.jpg
 layout: project_layout
 location: sydney
-title: Meriton Rhodes waterfront apartment
 ---

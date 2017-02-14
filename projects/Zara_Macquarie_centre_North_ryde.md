@@ -1,6 +1,7 @@
 ---
-date: 2013-11-29 00:00:00 +1100
-date_range: !!python/str "July 2015 \u2013 December 2015"
+title: Zara Macquarie centre North ryde
+date: '2013-11-28 13:00:00'
+date_range: July 2015 – December 2015
 description: Great honour to complete Zara project at Macquarie centre with all wall
   and ceiling plasterboard works and all fittings and designed boxs for aircondition
   and lighting. Supply and install all carpentry and display podiums and bulkheads.
@@ -20,5 +21,4 @@ image_files:
 - projects/images/pexels-photo-87223.jpeg
 layout: project_layout
 location: sydney
-title: Zara Macquarie centre North ryde
 ---

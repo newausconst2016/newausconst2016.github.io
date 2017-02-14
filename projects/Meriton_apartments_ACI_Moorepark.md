@@ -1,5 +1,6 @@
 ---
-date: 2013-11-29 00:00:00 +1100
+title: Meriton apartments ACI Moorepark
+date: '2013-11-28 13:00:00'
 date_range: Starting February 2000
 description: Supply and install plasterboard for the new apartments
 group: projects
@@ -18,5 +19,4 @@ image_files:
 - projects/images/escalator-stairs-metal-segments-architecture-54581.jpeg
 layout: project_layout
 location: sydney
-title: Meriton apartments ACI Moorepark
 ---
