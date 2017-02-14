@@ -8,11 +8,8 @@ group: navigation
   <div class="landing-screen-content">
         <div class="landing-screen-slogan">
           <p>Building a better Australia</p>
-<!--          <p>More about us&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>-->
-<!--</p>-->
           <a class="btn btn-sm btn-danger" href="/about/">More about us&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
         </div>
-<!--    <a class="btn btn-primary btn-lg" href="/about/">Learn more</a>-->
   </div>
 </section>
 
@@ -27,14 +24,14 @@ group: navigation
       {% for proj in project_pages limit:8 %}
         {% assign proj_img_path = null %}
 
-        {% if proj.profile_image_filename != null %}
-          {% assign proj_img_path = '/img/' | append: proj.profile_image_filename | prepend: proj.filename | prepend: "/projects/" %}
+        {% if proj.image_files.size > 0 %}
+          {% assign proj_img_path = '/' | append: proj.image_files[0] %}
         {% else %}
           {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}
         {% endif %}
       
         <div class="col-md-4 project-thumbnail-cell">
-          <div class="caption-style-3">
+          <a class="caption-style-3" href="{{ proj.url | replace: '.html', '' }}">
             <img src="{{ proj_img_path }}" alt="" style="max-width:100%; max-height:100%">
             <div class="caption">
               <div class="blur"></div>
@@ -43,18 +40,10 @@ group: navigation
                   <p>{{ proj.date_range }}</p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       {% endfor %}
-        
-        
-        
-        
-      {% for proj_hash in site.data.projects %}
-        {% assign proj = proj_hash[1] %}
-        
-      {% endfor %}
+
     </div>
   </div>
-
 </section>

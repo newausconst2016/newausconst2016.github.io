@@ -6,56 +6,42 @@
   {% include navbar.html %}
   <div class="page-content">
     
-<!--
-    <div class="container">
-      <div class="project-header-title">{{ page.title }}</div>
+    <div class="page-heading" style="padding-top:20px;">
+      <div class="page-title">{{ page.title }}</div>
+      <div class="hr"></div>
+      <div class="page-description">{{ page.date_range }}</div>
     </div>
--->
-    
-<div class="page-heading" style="padding-top:20px;">
-  <div class="page-title">{{ page.title }}</div>
-  <div class="hr"></div>
-  <div class="page-description">{{ page.date_range }}</div>
-</div>
-    
-    
+      
+      
     <!--  Image Slider  -->
-    {% assign img_dir = page.url | append: "img/" %}
     <div class="slides">
-      {% for file in site.static_files %}
-        {% if file.path contains img_dir %}
-          <div><img class="img-responsive" src="{{ file.path }}" /></div>
-        {% endif %}
+      {% for img_file_path in page.image_files %}
+          <div><img class="img-responsive" src="{{ '/' | append: img_file_path }}"/></div>
       {% endfor %}
     </div>
-  <!-- /Image Slider -->
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-9">
-        <div class="project-description">
-          <h4>Overview</h4>
-          <p>{{ page.description }}</p>
+    <!-- end of Image Slider -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="project-description">
+            <h4>Overview</h4>
+            <p>{{ page.description }}</p>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="project-period">
-          <h4>Period</h4>
-          <p>{{ page.date | date: "%B %Y" }}</p>
-        </div>
-        <div class="project-location">
-          <h4>Location</h4>
-          <p>{{ page.location }}</p>
+        <div class="col-sm-3">
+          <div class="project-period">
+            <h4>Period</h4>
+            <!-- date value of the project -->
+            <p>{{ page.date | date: "%B %Y" }}</p>
+          </div>
+          <div class="project-location">
+            <h4>Location</h4>
+            <p>{{ page.location }}</p>
+          </div>
         </div>
       </div>
     </div>
-  
-    
-    
-  </div>
-  
-  
-  
   
   </div>
   
