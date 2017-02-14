@@ -238,6 +238,15 @@ footer {
   color: #555555;
 }
 
+.no-project-sign {
+  height: 200px;
+  padding-top:100px;
+  font-size: 16px;
+  text-align: center;
+  color: grey;
+  font-family: 'Raleway', sans-serif;
+}
+
 .service-item {
   padding: 15px;
 }

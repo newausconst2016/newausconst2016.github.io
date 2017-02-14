@@ -15,10 +15,11 @@ permalink: "/projects/"
   <div class="page-description">constructions involved</div>
 </div>
 
+{% assign project_pages = (site.pages | where: "group" , "projects" | sort: 'date') %}
+
 <div class="container">
   <div class="row">
 
-    {% assign project_pages = (site.pages | where: "group" , "projects" | sort: 'date') %}
     {% for proj in project_pages %}
       {% assign proj_img_path = null %}
 
@@ -43,5 +44,12 @@ permalink: "/projects/"
       </div>
     {% endfor %}
   </div>
+  
+  {% if project_pages.size <= 0 %}
+    <div class="no-project-sign">
+      Sorry, there aren't any projects at the moment
+    </div>
+  {% endif %}
 </div>
+
 
