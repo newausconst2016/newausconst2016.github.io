@@ -7,6 +7,5 @@ date_range: Starting April 2007
 filename: abc
 location: abc
 project_image_filename: P1250863.jpg
-image_files:
-- "/project_images/:title:/P1250863-1.jpg"
+image_files: 
 ---
