@@ -29,32 +29,32 @@
           <li><a href="/">Home</a></li>
         {% endif %}
 
-        {% if page.url == "/about.html" %}
+        {% if page.url contains "/about" %}
           <li class="active"><a href="/about">About</a></li>
         {% else %}
           <li><a href="/about">About</a></li>
         {% endif %}
 
-        {% if page.url contains "/projects/" %}
+        {% if page.url contains "/projects" %}
           <li class="active"><a href="/projects">Projects</a></li>
         {% else %}
           <li><a href="/projects">Projects</a></li>
         {% endif %}
 
 
-        {% if page.url == "/services.html" %}
+        {% if page.url contains "/services" %}
           <li class="active"><a href="/services">Services</a></li>
         {% else %}
           <li><a href="/services">Services</a></li>
         {% endif %}
 
-        {% if page.url == "/contact.html" %}
+        {% if page.url contains "/contact" %}
           <li class="active"><a href="/contact">Contact</a></li>
         {% else %}
           <li><a href="/contact">Contact</a></li>
         {% endif %}
 
-        {% if page.url == "/opportunities.html" %}
+        {% if page.url contains "/opportunities" %}
           <li class="active"><a href="/opportunities">Opportunities</a></li>
         {% else %}
           <li><a href="/opportunities">Opportunities</a></li>
