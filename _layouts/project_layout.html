@@ -16,7 +16,7 @@
     <!--  Image Slider  -->
     <div class="slides">
       {% for img_file_path in page.image_files %}
-          <div><img class="img-responsive" src="{{ '/' | append: img_file_path }}"/></div>
+          <div><img class="img-responsive" src="{{ img_file_path }}"/></div>
       {% endfor %}
     </div>
     <!-- end of Image Slider -->
