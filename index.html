@@ -27,7 +27,7 @@ group: navigation
         {% assign proj_img_path = null %}
 
         {% if proj.image_files.size > 0 %}
-          {% assign proj_img_path = '/' | append: proj.image_files[0] %}
+          {% assign proj_img_path = proj.image_files[0] %}
         {% else %}
           {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}
         {% endif %}
