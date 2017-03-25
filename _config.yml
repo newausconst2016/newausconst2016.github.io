@@ -8,11 +8,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-
+description: '
+Website for New Australia Construction. Building a better Australia. Hurstville. ABN: 44 145 152 389. Mobile: 0433 182 689
 '
+keywords: 'Sydney, Hurstville, New Australia Construction, Australia, Construction'
 baseurl: ''
 url: http://www.newaustraliaconstruction.com.au
 twitter_username: jekyllrb

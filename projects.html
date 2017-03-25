@@ -22,7 +22,7 @@ permalink: "/projects/"
     {% for proj in project_pages %}
       {% assign proj_img_path = null %}
 
-      {% if proj.image_files.size &gt; 0 %}
+      {% if proj.image_files.size > 0 %}
         {% assign proj_img_path = proj.image_files[0] %}
       {% else %}
         {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}
