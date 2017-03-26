@@ -14,7 +14,7 @@ permalink: "/projects/"
   <div class="page-description">constructions involved</div>
 </div>
 
-{% assign project_pages = (site.pages | where: "group" , "projects" | sort: 'date') %}
+{% assign project_pages = (site.pages | where: "group" , "projects" | sort: 'date' | reverse) %}
 
 <div class="container">
   <div class="row">
