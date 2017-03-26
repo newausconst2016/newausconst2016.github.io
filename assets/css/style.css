@@ -274,8 +274,13 @@ footer {
 
 .topic-image > img {
   max-width: 100%;
+  width:100%;
   position: absolute;
-  bottom: 0px;
+
+  /* vertical center the image */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767px) {
