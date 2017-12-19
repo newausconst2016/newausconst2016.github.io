@@ -11,6 +11,8 @@ description: "Supply and install Plasterboard, bulkhead, ceiling and walls\nSupp
   Labour to install all light fittings \nsupply labour to install tiling and Stone.
   \n"
 image_files:
+- "/projects/images/IMG_4962.JPG"
+- "/projects/images/IMG_4390-1.JPG"
 - "/projects/images/IMG_5318.JPG"
 - "/projects/images/IMG_4992.JPG"
 - "/projects/images/IMG_5308.JPG"
