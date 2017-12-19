@@ -18,8 +18,11 @@
   salary: "$130 - $250/ day"
   job-type: full-time / part time  / casual
   location: Australia - NSW - Metro
-  description: |
-    We are looking for a Labourer who can drive a delivery truck GVM 4950KG ( car license) for materials delivery and general labouring works.
+  description: "We are looking for a Labourer who can drive a delivery truck GVM 4950KG
+    ( car license) for materials delivery and general labouring works. You must hold
+    a valid Australian Drivers license. \nYou will be required to pick up materials
+    and delivery to site. You will be required to do general labouring task when delivery
+    is not busy. \n"
 - title: engineer
   salary: 220,000.00 - 250,000.00 $ /year
   job-type: full-time
