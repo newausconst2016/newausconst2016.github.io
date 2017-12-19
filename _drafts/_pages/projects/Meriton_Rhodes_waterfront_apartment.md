@@ -1,5 +1,5 @@
 ---
-date: '2013-11-28T13:00:00.000+00:00'
+date: 2013-11-28 13:00:00 +0000
 date_range: Starting April 2004
 description: New residential units
 group: projects
