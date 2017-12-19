@@ -1,5 +1,5 @@
 ---
-date: '2013-11-28T13:00:00.000+00:00'
+date: 2013-11-28 13:00:00 +0000
 date_range: Starting February 2009
 description: worth about 150K of gyprocking
 group: projects
