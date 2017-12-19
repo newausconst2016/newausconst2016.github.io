@@ -1,4 +1,6 @@
 ---
+pages:
+- projects/mosman-luxury-mansion.md
 hide_body: false
 fields:
 - name: title
