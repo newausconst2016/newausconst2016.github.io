@@ -1,0 +1,60 @@
+---
+pages:
+- projects/petersham-tqm.md
+- projects/sydney-tower.md
+- projects/Chalstown_shopping_centre_Newcastle_westfield.md
+- projects/Zara_Macquarie_centre_North_ryde.md
+- projects/Walton_construction_Cess_nock_Care_centre.md
+- projects/Regement_Development_Legal_Aid_sydney_office.md
+- projects/Meriton_Rhodes_waterfront_apartment.md
+- projects/Hindmarsh_Apartment_Bruce_120units.md
+hide_body: false
+fields:
+- name: title
+  type: text
+  label: title
+  description: Title of this project
+  config:
+    required: true
+  default: Project title
+- name: group
+  type: text
+  label: group
+  description: must be "projects"
+  hidden: true
+  default: projects
+  config:
+    required: true
+- name: layout
+  type: text
+  label: layout
+  description: layout use by the jekyll to render project page
+  hidden: true
+  default: project_layout
+  config:
+    required: true
+- name: date
+  type: datetime
+  label: date
+  description: use for project sorting order
+  hidden: false
+- name: date_range
+  type: text
+  label: date_range
+  description: description of date range of this project
+  default: Starting April 2007
+  config:
+    required: true
+- name: location
+  type: text
+  label: location
+  description: location of this project
+  config:
+    required: true
+- name: description
+  type: textarea
+  label: description
+  description: description of the project
+- name: image_files
+  type: image_gallery
+  label: Image files

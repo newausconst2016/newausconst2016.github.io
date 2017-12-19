@@ -1,0 +1,18 @@
+---
+hide_body: false
+fields:
+- name: title
+  default: Welcome to Jekyll!
+  label: Title
+  type: text
+  hidden: false
+- name: layout
+  default: post
+  label: Layout
+  type: text
+  hidden: false
+- name: group
+  default: navigation
+  label: Group
+  type: text
+  hidden: false
