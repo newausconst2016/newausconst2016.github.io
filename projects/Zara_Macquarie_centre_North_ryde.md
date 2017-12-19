@@ -9,11 +9,12 @@ description: "ZARA retail fashion store at Macquarie Westfield shopping centre \
   shop front walls, ceilings, bulkheads, doors door frames and display podiums.\n"
 group: projects
 image_files:
+- "/projects/images/IMG_2319.JPG"
+- "/projects/images/IMG_2356.JPG"
 - "/projects/images/IMG_2298.JPG"
 - "/projects/images/IMG_2285-1.JPG"
 - "/projects/images/IMG_2234.JPG"
 - "/projects/images/IMG_2168.JPG"
-- "/projects/images/IMG_1843.JPG"
 - "/projects/images/IMG_2166.JPG"
 - "/projects/images/IMG_2123.JPG"
 - "/projects/images/IMG_1847.JPG"
