@@ -1,12 +1,7 @@
 ---
 pages:
-- projects/Regement_Development_Legal_Aid_sydney_office.md
 - projects/petersham-tqm.md
 - projects/Zara_Macquarie_centre_North_ryde.md
-- projects/Chalstown_shopping_centre_Newcastle_westfield.md
-- projects/Walton_construction_Cess_nock_Care_centre.md
-- projects/Meriton_Rhodes_waterfront_apartment.md
-- projects/Hindmarsh_Apartment_Bruce_120units.md
 hide_body: false
 fields:
 - name: title
