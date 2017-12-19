@@ -1,5 +1,5 @@
 ---
-date: '2013-11-28T13:00:00.000+00:00'
+date: 2013-11-28 13:00:00 +0000
 date_range: Starting February 2012
 description: Australia Federal Police building at Central, Property maintenance and
   renovating all Legal Aid office through out the building( total 10 Levels of offices)
