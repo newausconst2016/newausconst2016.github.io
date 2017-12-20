@@ -1,5 +1,5 @@
 ---
-date: 2015-07-01 00:00:00 +1000
+date: 2015-06-30 14:00:00 +0000
 date_range: July 2015 – December 2015
 description: "ZARA retail fashion store at Macquarie Westfield shopping centre \n\nDesign,
   supply and install mechanical ventilation system boxes and lighting.\nSupply and

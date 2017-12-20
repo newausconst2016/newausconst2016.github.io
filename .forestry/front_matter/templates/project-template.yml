@@ -1,8 +1,8 @@
 ---
 pages:
+- projects/petersham-tqm.md
 - projects/Zara_Macquarie_centre_North_ryde.md
 - projects/mosman-luxury-mansion.md
-- projects/petersham-tqm.md
 hide_body: false
 fields:
 - name: title

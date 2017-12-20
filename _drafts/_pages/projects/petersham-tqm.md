@@ -3,7 +3,7 @@ title: P& N Residence Parkside Plasterboard Package for 42 Units
 group: projects
 layout: project_layout
 date_range: April 2017- Nov 2017
-date: 2017-03-26 20:23:42 +1100
+date: 2017-03-26 09:23:42 +0000
 location: 1-15 West st Petersham NSW
 description: "Residential apartment 42 units \nsupply and install steel door frames\nSupply
   and install Fire rated Hebel panels walls \nSupply and install External/ internal
