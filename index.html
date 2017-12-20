@@ -13,7 +13,7 @@ group: navigation
   </div>
 </section>
 
-{% assign project_pages = (site.pages | where: "group", "projects" | sort: "date" | reverse) %}
+{% assign project_pages = site.pages | where: "group", "projects" | sort: "date" | reverse %}
 {% if project_pages.size > 0 %}
 <section>
   <div class="container">

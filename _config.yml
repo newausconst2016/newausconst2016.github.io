@@ -8,12 +8,12 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: '
-Website for New Australia Construction. Building a better Australia. Hurstville. ABN: 44 145 152 389. Mobile: 0433 182 689
-'
-keywords: 'Sydney, Hurstville, New Australia Construction, Australia, Construction'
+description: 'New Australia Construction. Building a better Australia. Hurstville. ABN: 44 145 152 389. Mobile: 0433 182 689'
+keywords: 'Sydney, Hurstville, New Australia Construction, Australia, Construction, NAC'
 baseurl: ''
-url: http://www.newaustraliaconstruction.com.au
-twitter_username: jekyllrb
-github_username: jekyll
+url: http://newaustraliaconstruction.com.au
+logo: '/assets/img/logo-small.png'
+lang: en_US
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag
