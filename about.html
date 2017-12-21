@@ -52,7 +52,10 @@ group: navigation
         </div>
       </div>
       <div class="col-sm-4 col-sm-pull-6">
-        <img src="%7B%7B%20site.data.about.director_profile_picture_link%20%7D%7D" width="100%">
+        {% if site.data.about.director_profile_picture_link == blank %}
+        <img src={{ site.data.about.director_profile_picture_link }} width="100%">
+        {% endif %}
+
       </div>
     </div>
   </div>
