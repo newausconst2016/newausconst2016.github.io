@@ -2,8 +2,8 @@
 title: Mosman Luxury Mansion
 group: projects
 layout: project_layout
-date_range: Starting April 2007
-date: 2017-12-20 00:51:42 +0000
+date_range: Starting April 2016
+date: Invalid date
 location: " Mosman NSW"
 description: "Supply and install Plasterboard, bulkhead, ceiling and walls\nSupply
   and install wall cladding \nSupply and install decorative cornices, panels, bands
