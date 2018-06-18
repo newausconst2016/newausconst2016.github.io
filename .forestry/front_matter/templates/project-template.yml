@@ -1,11 +1,6 @@
 ---
-pages:
-- projects/cladding-works.md
-- projects/office-partitions-grid-ceilings.md
-- projects/Zara_Macquarie_centre_North_ryde.md
-- projects/mosman-luxury-mansion.md
-- projects/petersham-tqm.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   type: text
@@ -55,3 +50,9 @@ fields:
 - name: image_files
   type: image_gallery
   label: Image files
+pages:
+- projects/office-partitions-grid-ceilings.md
+- projects/Zara_Macquarie_centre_North_ryde.md
+- projects/mosman-luxury-mansion.md
+- projects/petersham-tqm.md
+- projects/cladding-works.md
