@@ -1,4 +1,5 @@
 ---
+label: Project template
 hide_body: false
 is_partial: false
 fields:
@@ -51,9 +52,9 @@ fields:
   type: image_gallery
   label: Image files
 pages:
-- projects/dawr-mascot.html
-- projects/office-partitions-grid-ceilings.md
-- projects/Zara_Macquarie_centre_North_ryde.md
-- projects/mosman-luxury-mansion.md
 - projects/petersham-tqm.md
+- projects/Zara_Macquarie_centre_North_ryde.md
+- projects/dawr-mascot.html
+- projects/mosman-luxury-mansion.md
+- projects/office-partitions-grid-ceilings.md
 - projects/cladding-works.md
