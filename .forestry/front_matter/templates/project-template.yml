@@ -44,15 +44,6 @@ fields:
   description: location of this project
   config:
     required: true
-- name: description
-  type: textarea
-  label: description
-  description: description of the project
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-    required: true
 - name: image_files
   type: image_gallery
   label: Image files
