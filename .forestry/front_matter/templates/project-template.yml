@@ -48,14 +48,17 @@ fields:
   type: textarea
   label: description
   description: description of the project
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
 - name: image_files
   type: image_gallery
   label: Image files
 pages:
-- projects/testing.html
 - projects/petersham-tqm.md
+- projects/mosman-luxury-mansion.md
 - projects/Zara_Macquarie_centre_North_ryde.md
 - projects/dawr-mascot.html
-- projects/mosman-luxury-mansion.md
 - projects/office-partitions-grid-ceilings.md
-- projects/cladding-works.md
