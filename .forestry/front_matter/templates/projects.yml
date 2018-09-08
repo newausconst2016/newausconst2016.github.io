@@ -18,5 +18,3 @@ fields:
   label: Group
   type: text
   hidden: false
-pages:
-- projects/testing.html
