@@ -1,12 +1,6 @@
 ---
 date: 2015-06-30 14:00:00 +0000
 date_range: July 2015 – December 2015
-description: "ZARA retail fashion store at Macquarie Westfield shopping centre \n\nDesign,
-  supply and install mechanical ventilation system boxes and lighting.\nSupply and
-  install all ceiling bulkhead designs and suspended ceilings and walls\nDesign, supply
-  and install all both light weight and hardened false wall with ply and MDF boards\nSupply
-  and install doors, door frames, architectural hardwares and signs\nSupply and Install
-  shop front walls, ceilings, bulkheads, doors door frames and display podiums.\n"
 group: projects
 image_files:
 - "/projects/images/IMG_2298.JPG"
@@ -28,3 +22,9 @@ layout: project_layout
 location: Macqurie centre Westfield Macqurie park
 title: ZARA Macquarie centre Macqurie Park
 ---
+* ZARA retail fashion store at Macquarie Westfield shopping centre.
+* Design, supply and install mechanical ventilation system boxes and lighting.
+* Supply and install all ceiling bulkhead designs and suspended ceilings and walls.
+* Design, supply and install all both light weight and hardened false wall with ply and MDF boards.
+* Supply and install doors, door frames, architectural hardwares and signs.
+* Supply and Install shop front walls, ceilings, bulkheads, doors door frames and display podiums.

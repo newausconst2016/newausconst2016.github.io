@@ -5,11 +5,6 @@ layout: project_layout
 date_range: Starting April 2016
 date: 2017-11-30 13:00:00 +0000
 location: " Mosman NSW"
-description: "Supply and install Plasterboard, bulkhead, ceiling and walls\nSupply
-  and install wall cladding \nSupply and install decorative cornices, panels, bands
-  and roses. \nSupply and install all door frames and doors\nSupply to do painting.\nSupply
-  Labour to install all light fittings \nsupply labour to install tiling and Stone.
-  \n"
 image_files:
 - "/projects/images/IMG_2032.jpg"
 - "/projects/images/IMG_0628.JPG"
@@ -33,3 +28,9 @@ image_files:
 - "/projects/images/IMG_4427.JPG"
 - "/projects/images/IMG_4424.JPG"
 ---
+* Supply and install Plasterboard, bulkhead, ceiling and walls.
+* Supply and install wall cladding \nSupply and install decorative cornices, panels, bands and roses.
+* Supply and install all door frames and doors.
+* Supply to do painting.
+* Supply Labour to install all light fittings.
+* supply labour to install tiling and Stone.

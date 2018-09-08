@@ -5,10 +5,6 @@ layout: project_layout
 date_range: Starting April 2000
 date: 2017-12-21 00:00:00 +0000
 location: Sydney
-description: "Office Fitouts sample photos\nWe offer a complete office/ shop strip
-  out and Fitout quote. \nWe more than happy to do certain part of your Fitout projects
-  as well. \nWe are specialised in office strip outs, partitions, ceilings, acoustic
-  solutions, aluminum glazing partitions, doors and more. "
 image_files:
 - "/projects/images/BE383707-35E8-42A6-AFD2-C9888AD266EE.jpeg"
 - "/projects/images/B271E5BC-EFE5-4E12-9585-A4877FE47148.jpeg"
@@ -34,3 +30,7 @@ image_files:
 - "/projects/images/img_0457.jpg"
 - "/projects/images/img_0669.jpg"
 ---
+* Office Fitouts sample photos.
+* We offer a complete office shop strip out and Fitout quote.
+* We more than happy to do certain part of your Fitout projects as well.
+* We are specialised in office strip outs, partitions, ceilings, acoustic solutions, aluminum glazing partitions, doors and more.
