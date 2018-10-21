@@ -2,13 +2,6 @@ body {
   color: black;
 }
 
-@media(min-width:993px) {
-  .navbar-nav li a {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 .page-content {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -26,15 +19,13 @@ body {
   background-image: url(/assets/img/building-joy-planning-plans.jpg);
   background-size: 100%;
   background-position: center center;
-  background-size: cover;
-
-  
+  background-size: cover
 }
 
 
 .landing-screen-slogan {
   position: relative;
-  
+
   transform: translate(0%,180%);
   text-align:center;
 }
@@ -42,14 +33,9 @@ body {
 .landing-screen-slogan p{
   color: white;
   font-size: 40px;
-  
-  
 /*
   display: inline-block;
-  
-  
 */
-  
   text-shadow: 0px 0px 15px black;
 }
 
@@ -401,6 +387,13 @@ footer {
 .navbar {
   background-color: white;
   border: 0px;
+}
+
+@media(min-width:993px) {
+  .navbar-nav li a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .navbar-nav li a {
