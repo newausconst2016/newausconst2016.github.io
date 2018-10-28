@@ -1,0 +1,5 @@
+<div class="form-group {{ include.is_required }}">
+  <label class="control-label" for="">{{ include.question }}</label>
+  <input type="{{ include.type }}" class="form-control input-sm"
+    placeholder="{{ include.placeholder }}"  name="{{ include.field }}" {{ include.is_required }}>
+</div>

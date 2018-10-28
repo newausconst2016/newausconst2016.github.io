@@ -9,7 +9,7 @@ permalink: "/projects/"
 <!-- ########################################### -->
 
 <div class="page-heading" style="padding-top:20px;">
-  <div class="page-title"><br></div><p><br></p><p>Projects</p>
+  <div class="page-title">Projects</div>
   <div class="hr"></div>
   <div class="page-description">constructions involved</div>
 </div>
@@ -28,7 +28,6 @@ permalink: "/projects/"
         {% assign proj_img_path = '/assets/img/building_a_house.jpg' %}
       {% endif %}
 
-
       <div class="grid-vertical-gap col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-centered project-thumbnail-cell">
         <a class="caption-style-3" href="{{ proj.url | replace: '.html', '' }}">
           <img src={{ proj_img_path }} alt="">
@@ -43,7 +42,7 @@ permalink: "/projects/"
       </div>
     {% endfor %}
   </div>
-  
+
   {% if project_pages.size <= 0 %}
     <div class="empty-sign">
       Sorry, there aren't any projects at the moment

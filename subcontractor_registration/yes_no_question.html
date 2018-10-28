@@ -1,0 +1,16 @@
+<div class="form-group required">
+  <div class="row">
+    <div class="col-sm-9">
+      <label for="" class="control-label">{{ include.question }}</label>
+      {% if include.additional_info %}
+      <p class="help-block">available at <a href="{{ include.additional_info }}">{{ include.additional_info }}</a></p>
+      {% endif %}
+    </div>
+    <div class="col-sm-3">
+      <div class="pull-right">
+        {% capture field %} {{ include.question }} {% endcapture %}
+        {% include_relative binary_btns.html true_value="Yes" false_value="No" field=field %}
+      </div>
+    </div>
+  </div>
+</div>

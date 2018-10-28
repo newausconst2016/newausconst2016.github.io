@@ -1,0 +1,508 @@
+---
+title: Subcontractor Registration
+layout: main_layout
+permlink: "/subcontractor_registration/"
+group: navigation
+---
+
+<div class="page-heading" style="padding-top:20px;">
+  <div class="page-title">Subcontractor Registration</div>
+  <div class="hr"></div>
+  <div class="page-description">Thanks for your interest to NAC, please fill in your information below.</div>
+</div>
+
+<div class="topic-image">
+  <img src="/assets/img/pexels-photo-1249158.jpeg" alt="partnership" style="top:-5%;">
+</div>
+
+<div id="message-sent-alert" class="alert alert-dismissible alert-success fade in sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>Thank you for your interest in partnering with NAC.</p>
+</div>
+
+<div id="message-sending-alert" class="alert alert-dismissible alert-warning sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>Submitting your application.</p>
+</div>
+
+<div class="container">
+  <form class="gform" method="POST">
+    <div class="row">
+
+      <!-- section one -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Company Details" %}
+
+        <div class="row">
+          <div class="col-sm-9">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Company Name or Legal Entity"
+              field="Company Name"
+              is_required="required" %}
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group required">
+              <label class="control-label">Entity Type</label>
+              <select class="form-control input-sm" name="Legal Entity" required>
+                <option>Company</option>
+                <option>Partnership</option>
+                <option>Sole trader</option>
+                <option>Trust</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="number"
+              question="Australian Business Number (ABN)"
+              field="Australian Business Number (ABN)"
+              is_required="required" %}
+          </div>
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="number"
+              question="Australian Company Number (ACN)"
+              field="Australian Company Number (ACN)"
+              is_required="required" %}
+          </div>
+        </div>
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Address"
+          field="Company Address"
+          is_required="required" %}
+
+        <div class="row">
+          <div class="col-sm-8">
+            {% include_relative single_line_input.html
+              type="text"
+              question="City"
+              field="Company Address City"
+              is_required="required" %}
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group required">
+              <label class="control-label">State</label>
+              <select class="form-control input-sm" name="State" required>
+                <option value="NSW" selected="selected" class="">NSW</option>
+                <option value="VIC" class="">VIC</option>
+                <option value="ACT" class="">ACT</option>
+                <option value="TAS" class="">TAS</option>
+                <option value="QLD" class="">QLD</option>
+                <option value="WA" class="">WA</option>
+                <option value="NT" class="">NT</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            {% include_relative single_line_input.html
+              type="number"
+              question="Postcode"
+              field="Company Address Postcode"
+              is_required="required" %}
+          </div>
+        </div>
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Postal Address"
+          field="Postal Address"
+          placeholder="Your prefered postal address if different from above."
+          is_required="" %}
+
+        <div class="form-group required">
+          <label class="control-label">Trade</label>
+          <p class="help-block"><small>What types of service do your company offer? (hold control key to select more)</small></p>
+          <select multiple name="Trade" class="form-control input-sm" size="8" style="height: 100%;" required>
+            <option value="Blinds/Curtains" class="">Blinds/Curtains</option>
+            <option value="Brickwork" class="">Brickwork</option>
+            <option value="Carpenter" class="">Carpenter</option>
+            <option value="Ceilings" class="">Ceilings</option>
+            <option value="Computer Floors" class="">Computer Floors</option>
+            <option value="Concrete/Formwork" class="">Concrete/Formwork</option>
+            <option value="Consultant" class="">Consultant</option>
+            <option value="Data/ Voice" class="">Data/ Voice</option>
+            <option value="Demolition" class="">Demolition</option>
+            <option value="Design" class="">Design</option>
+            <option value="Electrical" class="">Electrical</option>
+            <option value="Fire" class="">Fire</option>
+            <option value="Floor Finishes" class="">Floor Finishes</option>
+            <option value="Furniture" class="">Furniture</option>
+            <option value="Hydraulics" class="">Hydraulics</option>
+            <option value="Joiner" class="">Joiner</option>
+            <option value="Landscape" class="">Landscape</option>
+            <option value="Lifts &amp; Hoists" class="">Lifts &amp; Hoists</option>
+            <option value="Mechanical" class="">Mechanical</option>
+            <option value="Metalwork" class="">Metalwork</option>
+            <option value="Painter" class="">Painter</option>
+            <option value="Partitions &amp; Doors" class="">Partitions &amp; Doors</option>
+            <option value="Rendering" class="">Rendering</option>
+            <option value="Roadworks" class="">Roadworks</option>
+            <option value="Roofer" class="">Roofer</option>
+            <option value="Security" class="">Security</option>
+            <option value="Signage" class="">Signage</option>
+            <option value="Special Doors" class="">Special Doors</option>
+            <option value="Stonework/ Marble" class="">Stonework/ Marble</option>
+            <option value="Structural Steel" class="">Structural Steel</option>
+            <option value="Tiler" class="">Tiler</option>
+            <option value="Wall Finishes" class="">Wall Finishes</option>
+            <option value="Whitegoods" class="">Whitegoods</option>
+            <option value="Windows/Glazing" class="">Windows/Glazing</option>
+            <option value="Workstations" class="">Workstations</option>
+            <option value="Other" class="frm_other_trigger">Other</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Name of person to contact"
+              field="Contact Person"
+              placeholder=""
+              is_required="required" %}
+          </div>
+          <div class="col-sm-3">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Contact Number"
+              field="Contact Number"
+              placeholder=""
+              is_required="required" %}
+          </div>
+          <div class="col-sm-5">
+            {% include_relative single_line_input.html
+              type="email"
+              question="Email Address"
+              field="Email Address"
+              placeholder=""
+              is_required="required" %}
+          </div>
+        </div>
+
+        {% include_relative file_upload.html
+          question="Company profile (if any)"
+          field="Company Profile"
+          help_text=""
+          is_required="" %}
+
+        {% include_relative file_upload.html
+          question="Safe Work Method Statement (SWMS) Template"
+          field="Safe Work Method Statement Template"
+          help_text=""
+          is_required="required" %}
+      </div> <!-- section one -->
+
+      <!-- section two: insurance details -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Public Liability Insurance Details" %}
+
+        <div class="row">
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Insurance Company"
+              field="Public Liability Insurance Company"
+              placeholder=""
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Insurance Policy Number"
+              field="Public Liability Insurance Policy No."
+              placeholder=""
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="number"
+              question="Value"
+              field="Public Liability Insurance Value"
+              placeholder=""
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="date"
+              question="Expiry Date"
+              field="Public Liability Insurance Expiry Date"
+              placeholder=""
+              is_required="required" %}
+          </div>
+        </div>
+
+        {% include_relative file_upload.html
+          question="Certificate of Currency"
+          field="Public Liability Insurance Certificate of Currency"
+          help_text="Please attach a copy of certificate of currency as proof."
+          is_required="required" %}
+      </div> <!-- section two: insurance details -->
+
+
+      <!-- section: Workers Compensation -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Workers Compensation Insurance Details" %}
+
+        <div class="row">
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Insurance Company"
+              field="Workers Compensation Insurance Company"
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Insurance Policy Number"
+              field="Workers Compensation Insurance Policy No."
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="date"
+              question="Expiry Date"
+              field="Workers Compensation Insurance Expiry Date"
+              is_required="required" %}
+          </div>
+        </div>
+
+        {% include_relative file_upload.html
+          question="Certificate of Currency"
+          field="Workers Compensation Insurance Certificate of Currency"
+          help_text="Please attach a copy of certificate of currency as proof."
+          is_required="required" %}
+      </div> <!-- section: Workers Compensation -->
+
+
+      <!-- section: Bank Details -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Bank Details" %}
+
+        <div class="row">
+          <div class="col-sm-3">
+            {% include_relative single_line_input.html
+              type="text"
+              question="BSB"
+              field="Bank BSB"
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-4">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Account Number"
+              field="Bank Account Number"
+              is_required="required" %}
+          </div>
+
+          <div class="col-sm-5">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Account Name"
+              field="Bank Account Name"
+              is_required="required" %}
+          </div>
+        </div>
+      </div> <!-- section: Bank Details -->
+
+
+      <!-- section: PRODUCT/ SUPPLY DETAILS -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Product/ Supply Details" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Description of Core Business"
+          field="Description of Core Business"
+          is_required="required" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Product/ Services Range"
+          field="Product/ Services Range" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Please provide details of the Australian Standards to which your products and/or services comply."
+          field="Please provide details of the Australian Standards to which your products and/or services comply." %}
+
+        {% include_relative yes_no_question.html
+          question="Are Product Specification and Design Drawings available for inspection?" %}
+
+        {% include_relative yes_no_question.html
+          question="Do the company maintain material traceability records for all products?" %}
+
+        {% include_relative yes_no_question.html
+          question="Do the company carry out external supplier audits?" %}
+
+        {% include_relative yes_no_question.html
+          question="Do the company operate Product Incident/ Failure Investigation and Reporting Procedures? (Provide Details)" %}
+
+        {% include_relative single_line_input.html
+          type="textarea"
+          question="If yes, please provide details."
+          field="Product Incident/ Failure Investigation and Reporting Procedures"
+          placeholder=""
+          is_required="" %}
+
+        {% include_relative yes_no_question.html
+          question="Does this company have a documented Product non-conformance procedure?" %}
+
+      </div> <!-- section: PRODUCT/ SUPPLY DETAILS -->
+
+      <!-- section: Quality / Health & Safety / Environmental Policy -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Quality / Health & Safety / Environmental Policy" %}
+
+        {% include_relative yes_no_question.html
+          question="Do you operate an auditable Quality Management System? e.g. ISO9001" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="QMS Certificate Number"
+          field="QMS Certificate Number"
+          placeholder=""
+          is_required="required" %}
+
+        {% include_relative file_upload.html
+          question="Please upload a copy of certificate:"
+          field="QMS Certificate File"
+          help_text="<small>(If applicable)</small>"
+          is_required="" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Frequency of External and Internal Audits"
+          field="Frequency of External and Internal Audits"
+          placeholder=""
+          is_required="" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Quality Contact"
+          field="Quality Contact"
+          placeholder=""
+          is_required="" %}
+
+        {% include_relative yes_no_question.html
+          question="Do you have Company Health & Safety Policy?" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Health & Safety Contact"
+          field="Health & Safety Contact"
+          placeholder=""
+          is_required="required" %}
+
+        {% include_relative yes_no_question.html
+          question="Do you have a Company Environmental Policy?" %}
+
+        {% include_relative single_line_input.html
+          type="text"
+          question="Environmental Contact"
+          field="Environmental Contact"
+          placeholder=""
+          is_required="required" %}
+
+      </div><!-- section: QUALITY / HEALTH & SAFETY / ENVIRONMENTAL POLICY -->
+
+
+      <!-- section: Declaration -->
+      <div class="col-md-8 col-md-offset-2">
+        {% include_relative form_section_heading.html
+          heading="Declaration" %}
+
+        {% include_relative agree_disagree_question.html
+          question="Our organisation will not to engage in any works directly for New Australia Construction clients unless authorised in writing to do so by New Australia Construction office." %}
+
+        {% include_relative agree_disagree_question.html
+          question="Our organisation will not deviate from the contract works or seek instruction from any other party unless authorised in writing to do so by New Australia Construction office." %}
+
+        {% include_relative agree_disagree_question.html
+          question="Our Organisation will progressively remove its own rubbish and unused materials from site to ensure a clean site." %}
+
+        {% include_relative agree_disagree_question.html
+          question="Our Organisation will ensure that each worker onsite will have completed the New Australia Construction Online Induction before attending site."
+          additional_info="https://newaustraliaconstruction.com.au/induction" %}
+
+        <div class="form-group required">
+          {% assign question = "I, the undersigned, being an authorised representative of the above organisation, certify the information herein to be correct." %}
+          <div class="row">
+            <div class="col-sm-9">
+              <label class="control-label">{{ question }}</label>
+            </div>
+            <div class="col-sm-3">
+              <div class="pull-right">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="declarationCheck" value="Checked" required />I agree.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Name"
+              field="Name"
+              placeholder=""
+              is_required="required" %}
+          </div>
+          <div class="col-sm-6">
+            {% include_relative single_line_input.html
+              type="text"
+              question="Position"
+              field="Position"
+              placeholder=""
+              is_required="required" %}
+          </div>
+        </div>
+
+      </div> <!-- section: Declaration -->
+
+      <div class="col-md-8 col-md-offset-2">
+        <div class="pull-right">
+          <button type="submit" id="form-submit-btn" class="btn btn-success btn-sm">Submit</button>
+        </div>
+      </div>
+    </div> <!-- row -->
+  </form>
+</div>
+
+<div id="message-sent-alert" class="alert alert-dismissible alert-success fade in  sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>Thanks for your registration. We will contact you as soon as possible.</p>
+</div>
+
+<div id="message-sending-alert" class="alert alert-dismissible alert-warning sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>Submitting</p>
+</div>
+
+<div id="message-error-alert" class="alert alert-dismissible alert-danger  sr-only">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <p>There seems to be an error with your registration.</p>
+</div>
+
+<script data-cfasync="false" type="text/javascript" src="./form-submission-handler.js"></script>
