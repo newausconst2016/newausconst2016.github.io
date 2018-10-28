@@ -261,6 +261,9 @@ footer {
 .topic-image > img {
   object-fit: cover;
   position: absolute;
+  max-height: 200%;
+  min-width: 100%;
+  min-height: 100%;
 
   /* vertical center the image */
   left: 50%;
